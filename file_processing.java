@@ -10,7 +10,7 @@ import java.util.Scanner;
 public class yoyo {
 
 	public static void main (String[] args) throws FileNotFoundException {
-	Scanner sources = new Scanner(new File("C:\\Users\\577184\\Documents\\EDMS_INPUTS\\AERMOD_INPUTS\\SO\\SodarSummer"));
+	Scanner sources = new Scanner(new File("C:\\Users\\577184\\Documents\\SO\\SodarSummer"));
 	for(int k=0; k<16; k++) {
 		sources.nextLine();
 	}
@@ -71,8 +71,8 @@ public class yoyo {
 		sourcerec3 = sources.nextLine();
 	}
 	sources.close();
-	Scanner emissions = new Scanner(new File("C:\\Users\\577184\\Documents\\EDMS Output Files\\2004CO.HRE"));
-	PrintWriter writer = new PrintWriter("C:\\Users\\577184\\Documents\\EDMS Output Files\\newInputs.txt,UTF-8");
+	Scanner emissions = new Scanner(new File("C:\\Users\\577184\\Documents\\2004CO.HRE"));
+	PrintWriter writer = new PrintWriter("C:\\Users\\577184\\Documents\\newInputs.txt,UTF-8");
 	while (emissions.hasNextLine()) {
 		LinkedList<String> finalSource = new LinkedList<String>();
 		String record = emissions.nextLine();
